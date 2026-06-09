@@ -154,7 +154,7 @@ p {
   
 }
 .onesection {
-    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5)), url("assets/bgsecond.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.99), rgba(255, 255, 255, 0.5)), url("assets/bgsecond.jpg");
     background-size:cover;
     padding: 30px;
     margin: 0px;
