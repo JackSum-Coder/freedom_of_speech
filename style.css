@@ -1,9 +1,13 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap'); 
+
 h1 {
     text-align:left;
     color: #a32828;
-    font-size: 50px;
-    font-family: Arial, sans-serif;
+    font-size: 75px;
+     font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+
      background-position: center;
 }
 button {
@@ -37,26 +41,49 @@ h2:hover {
     scale: 1.1;
 }
 hr {
-    border: 5px solid #a32828;
+    border: 10px solid #a32828;
     width: 100%;
-   
+   margin:0;    
+   margin-bottom: 0px;
 }
+
 .card {
     width:50px;
 
 }
+.topimages {
+    justify-content: center;
+    display: flex;
+     gap: 20px;
+     margin: 0; 
+   
+}
 .first {
-     display: block;
+    /*
   margin-left: auto;
-  margin-right: auto;
-  width:300px;
-  border-radius: 50%;
+  margin-right: auto; */
+  width: 220px;
+  height: 170px;
+  border-radius: 5%;
+  
   border: 5px solid #a32828;
-  animation: revealCard linear both;
+  animation: opacity linear both;
   animation-timeline: view();
   
 
 }
+.first:hover {
+    scale: 1.1
+}
+@keyframes opacity {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes revealCard {
   from {
     opacity: 0;
@@ -94,6 +121,11 @@ h2 {
     margin: 20px auto;
     /*change font*/
     font-family: Arial, sans-serif;
+    animation: opacity linear both;
+  animation-timeline: view();
+  
+  
+   
 }
 
 /* The code below aligns 
@@ -101,18 +133,30 @@ h2 {
 /* The code below a solid black border to section and puts space between them (the margin). */
 .section {
     border: 5px #a32828 solid;
-    margin:5px;
+    margin:15px;
 
 }
 .section:hover {
     background-color: #ffffff;
+    scale: 1.015;
     transition: 0.3s;
 }
 body {
     background-color: #bfbdff;
+    margin: 0;
 }
 p {
     text-align: center;
     color: #a32828;
     font-size: 20px;
+    animation: opacity linear both;
+  animation-timeline: view();
+  
+}
+.onesection {
+    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5)), url("assets/bgsecond.jpg");
+    background-size:cover;
+    padding: 30px;
+    margin: 0px;
+   
 }
