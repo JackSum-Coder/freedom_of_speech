@@ -69,6 +69,8 @@ hr {
   border: 5px solid #a32828;
   animation: opacity linear both;
   animation-timeline: view();
+  animation-range: entry 10% cover 70%;
+  
   
 
 }
@@ -108,6 +110,7 @@ hr {
   animation: revealCard linear both;
   animation-timeline: view();
   animation-range: entry 10% cover 40%;
+  margin-bottom: 20px;
 }
 .section img:hover {
     transform: scale(1.1);
@@ -123,7 +126,7 @@ h2 {
     font-family: Arial, sans-serif;
     animation: opacity linear both;
   animation-timeline: view();
-  
+    animation-range: entry 10% cover 40%;
   
    
 }
@@ -152,6 +155,7 @@ p {
     font-family: "Chelsea Market", system-ui;
     animation: opacity linear both;
   animation-timeline: view();
+    animation-range: entry 10% cover 40%;
   
 }
 .onesection {
@@ -160,4 +164,7 @@ p {
     padding: 30px;
     margin: 0px;
    
+}
+.section-container {
+    
 }
